@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sample.bukujibikimarshmallow.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/back"
+        android:src="@drawable/back"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/boukuji"
+        android:src="@drawable/boukuji"
+        android:scaleType="matrix"
+        android:layout_marginTop="117dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView6"
+        android:src="@drawable/gwxrogo2"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="くじ引きスタート!"
+        android:id="@+id/configbutton"
+        android:background="@android:drawable/alert_light_frame"
+        android:textColor="#031fd5"
+        android:textSize="25dp"
+        android:layout_above="@+id/append"
+        android:layout_alignStart="@+id/append" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="終 了"
+        android:id="@+id/append"
+        android:background="@android:drawable/alert_light_frame"
+        android:textColor="#031fd5"
+        android:textSize="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

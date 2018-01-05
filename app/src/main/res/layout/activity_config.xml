@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sample.bukujibikimarshmallow.ConfigActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/back"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/back"
+        android:longClickable="false"
+        android:scaleType="centerCrop" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="くじ引きスタート"
+        android:id="@+id/startbutton"
+        android:textColor="#031fd5"
+        android:textSize="25dp"
+        android:background="@android:drawable/alert_light_frame"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="人数設定画面"
+        android:id="@+id/textView2"
+        android:textColor="#031fd5"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2"
+        android:layout_above="@+id/linearLayout3"
+        android:layout_alignStart="@+id/back"
+        android:layout_marginBottom="37dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="赤  "
+            android:id="@+id/red"
+            android:textColor="#df0505"
+            android:textSize="30dp" />
+
+        <EditText
+            android:maxLength="2"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/redmember"
+            android:background="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout3"
+        android:layout_alignStart="@+id/back"
+        android:layout_marginBottom="37dp"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="青  "
+            android:id="@+id/blue"
+            android:textColor="#1405df"
+            android:textSize="30dp" />
+
+        <EditText
+            android:maxLength="2"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/bluemember"
+            android:background="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout7"
+        android:layout_alignBottom="@+id/linearLayout2"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/linearLayout2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  黒  "
+            android:id="@+id/black"
+            android:textColor="#060505"
+            android:textSize="30dp"
+            android:singleLine="false" />
+
+        <EditText
+            android:maxLength="2"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/blackmember"
+            android:background="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout8"
+        android:layout_alignTop="@+id/linearLayout3"
+        android:layout_toEndOf="@+id/linearLayout3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  橙  "
+            android:id="@+id/orange"
+            android:textColor="#b25804"
+            android:textSize="30dp" />
+
+        <EditText
+            android:maxLength="2"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/orangemember"
+            android:background="#FFFFFF" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="紫  "
+        android:id="@+id/purple"
+        android:textColor="#7c03b8"
+        android:textSize="30dp"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_toStartOf="@+id/purplemember" />
+
+    <EditText
+        android:maxLength="2"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/purplemember"
+        android:background="#FFFFFF"
+        android:layout_alignBottom="@+id/purple"
+        android:layout_alignEnd="@+id/linearLayout8"
+        android:layout_below="@+id/linearLayout3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="緑  "
+        android:id="@+id/green"
+        android:textColor="#129402"
+        android:textSize="30dp"
+        android:layout_alignTop="@+id/greenmember"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:maxLength="2"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/greenmember"
+        android:background="#FFFFFF"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/yellow"
+        android:layout_toEndOf="@+id/green" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="黄  "
+        android:id="@+id/yellow"
+        android:textColor="#8e9802"
+        android:textSize="30dp"
+        android:layout_alignBottom="@+id/yellowmember"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:maxLength="2"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/yellowmember"
+        android:background="#FFFFFF"
+        android:layout_toEndOf="@+id/yellow"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_alignBottom="@+id/purple" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="人数一括設定"
+        android:id="@+id/ikkatsutext"
+        android:layout_marginTop="37dp"
+        android:textColor="#de0505"
+        android:textSize="25dp"
+        android:layout_below="@+id/textView2"
+        android:layout_toStartOf="@+id/linearLayout7" />
+
+    <EditText
+        android:maxLength="2"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:inputType="number"
+        android:ems="10"
+        android:background="#FFFFFF"
+        android:id="@+id/ikkatsuedit"
+        android:layout_alignBottom="@+id/ikkatsutext"
+        android:layout_alignEnd="@+id/textView2" />
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:text="OK"
+        android:id="@+id/ikkatsubutton"
+        android:layout_alignTop="@+id/ikkatsutext"
+        android:layout_toEndOf="@+id/ikkatsuedit"
+        android:textColor="#de0505"
+        android:layout_alignParentEnd="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="    合計人数"
+        android:id="@+id/goukei"
+        android:layout_below="@+id/ikkatsubutton"
+        android:layout_alignStart="@+id/ikkatsutext"
+        android:textSize="25dp"
+        android:textColor="#031fd5" />
+
+    <EditText
+        android:maxLength="3"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:inputType="number"
+        android:ems="10"
+        android:background="#FFFFFF"
+        android:id="@+id/goukeiedit"
+        android:layout_alignTop="@+id/goukei"
+        android:layout_alignStart="@+id/ikkatsuedit" />
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:text="計算"
+        android:id="@+id/goukeibutton"
+        android:layout_below="@+id/ikkatsubutton"
+        android:layout_alignStart="@+id/ikkatsubutton"
+        android:textColor="#031fd5" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:background="#00000000"
+        android:id="@+id/preferencebutton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="桃"
+        android:id="@+id/pinkimage"
+        android:textColor="#f759b5"
+        android:textSize="30dp"
+        android:layout_alignTop="@+id/greenmember"
+        android:layout_alignStart="@+id/purple" />
+
+    <EditText
+        android:maxLength="2"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/pinkmember"
+        android:background="#FFFFFF"
+        android:layout_alignTop="@+id/pinkimage"
+        android:layout_alignStart="@+id/purplemember" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="白"
+        android:id="@+id/white"
+        android:textColor="#fefffe"
+        android:textSize="30dp"
+        android:layout_alignTop="@+id/whitemember"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:maxLength="2"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/whitemember"
+        android:background="#FFFFFF"
+        android:layout_above="@+id/startbutton"
+        android:layout_toStartOf="@+id/linearLayout8" />
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="red">
+        <item>@drawable/red</item>
+    </array>
+    <array name="blue">
+        <item>@drawable/blue</item>
+    </array>
+    <array name="yellow">
+        <item>@drawable/yellow</item>
+    </array>
+    <array name="green">
+        <item>@drawable/green</item>
+    </array>
+    <array name="purple">
+        <item>@drawable/purple</item>
+    </array>
+    <array name="black">
+        <item>@drawable/black</item>
+    </array>
+    <array name="orange">
+        <item>@drawable/orange</item>
+    </array>
+    <array name="pink">
+        <item>@drawable/pink</item>
+    </array>
+    <array name="white">
+        <item>@drawable/white</item>
+    </array>
+
+</resources>
