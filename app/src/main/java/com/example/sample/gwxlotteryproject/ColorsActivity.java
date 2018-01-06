@@ -1,4 +1,4 @@
-package com.example.sample.bukujibikimarshmallow;
+package com.example.sample.gwxlotteryproject;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -148,11 +148,11 @@ public class ColorsActivity extends AppCompatActivity implements View.OnLongClic
             //参加人数リストが0か判定する
             if(allMembersList.size() != 0){
                 //0でなければMain2へ値を渡す
-                intent = new Intent(getApplicationContext(),Main2Activity.class);
+                intent = new Intent(getApplicationContext(),LotteryActivity.class);
                 intent.putIntegerArrayListExtra("allMembersList",allMembersList);
             }else {
                 //0ならば終了画面へ遷移
-                intent = new Intent(getApplicationContext(), Main4Activity.class);
+                intent = new Intent(getApplicationContext(), EndActivity.class);
             }
             startActivityForResult(intent,0);
             finish();

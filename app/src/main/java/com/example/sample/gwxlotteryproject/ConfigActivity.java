@@ -1,4 +1,4 @@
-package com.example.sample.bukujibikimarshmallow;
+package com.example.sample.gwxlotteryproject;
 
 /**
  * 人数を設定する画面
@@ -237,7 +237,7 @@ public class ConfigActivity extends AppCompatActivity implements View.OnClickLis
                         editor.putString("rbygpbopwTotal",String.valueOf(rbygpbopwTotal));
                         editor.commit();
                         //くじ引き実行画面(Main2Activity)に遷移する際、値を渡す
-                        Intent intent = new Intent(getApplicationContext(), Main2Activity.class);
+                        Intent intent = new Intent(getApplicationContext(), LotteryActivity.class);
                         intent.putIntegerArrayListExtra("allMembersList", allMembersList);
                         startActivityForResult(intent,0);
                         finish();

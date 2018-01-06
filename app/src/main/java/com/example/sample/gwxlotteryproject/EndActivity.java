@@ -1,4 +1,4 @@
-package com.example.sample.bukujibikimarshmallow;
+package com.example.sample.gwxlotteryproject;
 
 /**
  * くじ引きが終了した際に表示される画面
@@ -19,7 +19,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-public class Main4Activity extends AppCompatActivity implements View.OnClickListener{
+public class EndActivity extends AppCompatActivity implements View.OnClickListener{
 
     //トップ画面に戻るボタン
     private Button topBack,appEnd;

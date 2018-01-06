@@ -1,4 +1,4 @@
-package com.example.sample.bukujibikimarshmallow;
+package com.example.sample.gwxlotteryproject;
 
 /**
  * くじ引きを行う画面
@@ -20,7 +20,7 @@ import android.widget.ImageView;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class Main2Activity extends AppCompatActivity implements View.OnTouchListener{
+public class LotteryActivity extends AppCompatActivity implements View.OnTouchListener{
 
     //動作させる棒画像
     ImageView stickImage,boukujiImage,backImage,characterImage,gwxrogoImage,mejirusiImage;
@@ -64,7 +64,7 @@ public class Main2Activity extends AppCompatActivity implements View.OnTouchList
         allMembersList = intent.getIntegerArrayListExtra("allMembersList");
 
         //プリファレンンスに保存された色の判定で使用する値を数値へ変換
-        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(Main2Activity.this);
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(LotteryActivity.this);
         //プリファレンンスに保存された各色の値を変換
         redMember = Integer.parseInt(preferences.getString("redMember",null));
         blueMember = Integer.parseInt(preferences.getString("blueMember",null));
@@ -261,7 +261,7 @@ public class Main2Activity extends AppCompatActivity implements View.OnTouchList
                         }
                     } else {
                         //終了画面へ遷移
-                        intent = new Intent(this, Main4Activity.class);
+                        intent = new Intent(this, EndActivity.class);
                     }
                     new Handler().postDelayed(runnable,250);
                 } else {

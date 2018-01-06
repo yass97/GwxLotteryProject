@@ -1,4 +1,4 @@
-package com.example.sample.bukujibikimarshmallow;
+package com.example.sample.gwxlotteryproject;
 
 /**
  * トップ画面
