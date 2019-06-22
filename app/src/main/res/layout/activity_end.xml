@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.sample.gwxlotteryproject.ui.EndActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/background_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/background" />
+
+        <TextView
+            android:id="@+id/kujibiki_end_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/kujibiki_end_title"
+            android:textColor="#0509d5"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/top_return_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/kujibiki_end_title"
+            android:layout_alignStart="@+id/kujibiki_end_title"
+            android:layout_marginTop="51dp"
+            android:text="@string/top_return_button"
+            android:textColor="#c2010e" />
+
+        <Button
+            android:id="@+id/app_end_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/topback"
+            android:layout_alignEnd="@+id/kujibikiend"
+            android:text="@string/app_end_button" />
+
+    </RelativeLayout>
+
+</layout>
