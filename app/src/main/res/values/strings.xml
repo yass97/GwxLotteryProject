@@ -1,3 +1,30 @@
 <resources>
-    <string name="app_name">GWXくじ引き</string>
+    <string name="app_name">かぶらぬくじ引き</string>
+
+    <!-- トップ画面 -->
+    <string name="kujibiki_start">くじ引きスタート</string>
+    <string name="app_end">終了</string>
+
+    <!-- 設定画面 -->
+    <string name="lottery_start_button">くじ引きスタート</string>
+    <string name="config_title">人数設定画面</string>
+    <string name="red_label">赤</string>
+    <string name="blue_label">青</string>
+    <string name="black_label">黒</string>
+    <string name="orange_label">橙</string>
+    <string name="purple_label">紫</string>
+    <string name="green_label">緑</string>
+    <string name="yellow_label">黄</string>
+    <string name="white_label">白</string>
+    <string name="pink_label">桃</string>
+    <string name="number_of_people_bulk_label">人数一括設定</string>
+    <string name="total_number_of_people_label">合計人数</string>
+    <string name="bulk_button">OK</string>
+    <string name="calc_button">計算</string>
+
+    <!-- 終了画面 -->
+    <string name="kujibiki_end_title">くじ引き終了です</string>
+    <string name="top_return_button">トップ画面へ戻る</string>
+    <string name="app_end_button">アプリを終了する</string>
+
 </resources>
